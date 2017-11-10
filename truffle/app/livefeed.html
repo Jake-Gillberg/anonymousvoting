@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Open Vote Network on Ethereum">
+    <meta name="author" content="Paddy">
+    <title>Live Feed</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="stylesheets/starter-template.css" rel="stylesheet">
+
+    <style> div { max-width: 600px; text-align: center;} </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h3 id="state"></h3>
+      <div class="panel panel-primary">
+         <div class="panel-heading">Colour codes.</div>
+         <ul class="list-group">
+             <li class="list-group-item list-group-item-success">Voter has voted.</li>
+             <li class="list-group-item list-group-item-danger">Optional Phase: Voter has commited (and not revealed) their vote.</li>
+             <li class="list-group-item list-group-item-info">Voter has registered to vote. </li>
+             <li class="list-group-item">Voter is eligible to vote.</li>
+         </ul>
+      </div>
+
+      <div class="panel panel-primary">
+         <div class="panel-heading">Vote Cast.  </div>
+         <ul id="voted" class="list-group"></ul>
+      </div>
+      <div class="panel panel-primary" id="commitdiv">
+         <div class="panel-heading">Committed (and not revealed) their vote.</div>
+         <ul id="committed" class="list-group"></ul>
+      </div>
+      <div class="panel panel-primary">
+         <div class="panel-heading">Registered to vote. </div>
+         <ul id="registered" class="list-group"></ul>
+      </div>
+      <div class="panel panel-primary">
+         <div class="panel-heading">Eligible to vote. </div>
+         <ul id="listaddresses" class="list-group"></ul>
+      </div>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="deps/jquery.min.js"></script>
+    <script src="deps/bootstrap.min.js"></script>
+    <script src="deps/web3.min.js"></script>
+    <script src="deps/bignumber.min.js"></script>
+
+    <script src="./livefeed.js"></script>
+  </body>
+</html>
