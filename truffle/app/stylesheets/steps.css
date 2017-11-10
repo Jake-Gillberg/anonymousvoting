@@ -10,7 +10,7 @@ html {
 	height: 100%;
 	background:
 		linear-gradient(rgba(196, 102, 0, 0.2), rgba(155, 89, 182, 0.2)),
-		url('../img/background.png');
+		url('../images/background.png');
 }
 
 body {
